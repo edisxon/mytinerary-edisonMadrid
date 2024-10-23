@@ -2,8 +2,8 @@ import { useState } from 'react'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import './App.css'
 import StardardLayout from "./pages/StandardLayout.jsx"
-import { Home } from './pages/home.jsx';
-import Cities from './pages/cities.jsx';
+import { Home } from './pages/Home.jsx';
+import Cities from './pages/Cities.jsx';
 
 const router = createBrowserRouter([
   {
