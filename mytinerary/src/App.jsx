@@ -4,6 +4,7 @@ import './App.css'
 import StardardLayout from "./pages/StandardLayout.jsx"
 import { Home } from './pages/Home.jsx';
 import Cities from './pages/Cities.jsx';
+import Details from './pages/Details.jsx';
 
 const router = createBrowserRouter([
   {
@@ -13,6 +14,7 @@ const router = createBrowserRouter([
           { path: '/', element: <Home /> }, 
           { path: '/Home', element: <Home /> },
           { path: '/cities', element: <Cities /> },
+          {path: '/details', element: <Details />},
       ],
   },
 ]);
