@@ -1,6 +1,8 @@
+import { Link } from 'react-router-dom';
+
 export default function CityCard({ city }) {
   return (
-    <a href={`/details?_id=${city._id}`} className="block relative max-w-xs overflow-hidden rounded-2xl shadow-lg group">
+    <Link to={`/itineraries/city/${city._id}`} className="block relative max-w-xs overflow-hidden rounded-2xl shadow-lg group">
       <img
         src={city.image}
         alt={city.name}
@@ -11,6 +13,6 @@ export default function CityCard({ city }) {
           {city.name}
         </h2>
       </div>
-    </a>
+    </Link>
   );
 }
